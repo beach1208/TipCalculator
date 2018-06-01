@@ -4,44 +4,60 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
+    android:background="#202D76"
     tools:context=".Main2Activity">
 
     <SeekBar
         android:id="@+id/seekBar2"
-        android:layout_width="281dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="291dp"
-        android:max="100" />
+        android:max="30" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/personTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/seekBar2"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="320dp"
+        android:textSize="20sp"
+        android:textColor="#FDEF9E"
+        />
+
+    <TextView
+        android:id="@+id/YourBills"
+        android:textColor="#FDEF9E"
         android:layout_width="162dp"
         android:layout_height="62dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="53dp"
         android:layout_marginTop="16dp"
-        android:text="Your Bills"
-        android:textSize="30sp" />
+        android:text="Your Bill"
+        android:textSize="30sp"
+        app:fontFamily="@font/antic_didone" />
 
     <TextView
         android:id="@+id/billView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView3"
+        android:layout_below="@+id/YourBills"
         android:layout_centerHorizontal="true"
-        android:textSize="50sp" />
+        android:textColor="#FDEF9E"
+        android:textSize="50sp"
+        app:fontFamily="@font/antic_didone" />
 
     <SeekBar
         android:id="@+id/seekBar"
-        android:layout_width="281dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="217dp"
+        android:textColor="#FDEF9E"
         android:max="100" />
 
     <TextView
@@ -50,39 +66,43 @@
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/seekBar"
         android:layout_alignParentTop="true"
+        android:textColor="#FDEF9E"
+        android:textSize="20sp"
         android:layout_marginTop="248dp"
-        android:text="15%" />
+         />
 
-
-
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="273dp"
-        android:ems="10"
-        android:inputType="textMultiLine" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/NewBillTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="196dp"
-        android:text="New Bills"
-        android:textSize="30sp" />
+        android:text="New Bill"
+        android:textColor="#D18392"
+        android:textSize="30sp"
+        app:fontFamily="@font/antic_didone"/>
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/newBillstv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="91dp"
-        android:text="$115"
-        android:textSize="50sp" />
+        android:textColor="#D18392"
+        android:textSize="50sp"
+        app:fontFamily="@font/antic_didone"/>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="282dp"
+        android:background="#D18392" />
+
 
 </RelativeLayout>
